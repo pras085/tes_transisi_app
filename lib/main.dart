@@ -8,9 +8,14 @@ void main() {
   runApp(
     GetMaterialApp(
       title: "TransisiTesApp",
+      theme: ThemeData(
+        primarySwatch: Colors.blueGrey,
+        fontFamily: 'Poppins',
+      ),
       initialRoute: AppPages.initial,
       getPages: AppPages.routes,
       debugShowCheckedModeBanner: false,
+      defaultTransition: Transition.cupertino,
     ),
   );
 }
